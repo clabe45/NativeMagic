@@ -123,8 +123,8 @@ var C = function(element, isDummy=false) {
 	 *	@return <code>self</code> 
 	 */
 	self.addClass$ = function(cls) {
-		if (self.className.indexOf(cls) === -1)
-			self.className += self.className.length>0?';':'' + cls;
+		if (self.className.indexOf(cls) == -1)
+			self.className += (self.className.length>0?';':'') + cls;
 		return self;
 	};
 	/** Checks ot see if <code>self.className</code> contains the substring <code>theClass</code>
