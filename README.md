@@ -37,3 +37,6 @@ Syntax: `fade$(css[, callback[, duration[, rate]]])`
     div0.fade$( {'width': 0, 'height': 0, 'backgroundColor': '#000000'} );  // colors need to be in RGB or hexadecimal format
     
 The default values for `duration` and `rate` are `400` and `2`, respectively.
+
+## All Methods
+Check the documentation in the source code for all the methods that get attached to a new magic element
