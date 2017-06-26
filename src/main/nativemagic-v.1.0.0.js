@@ -198,7 +198,7 @@ var C = function(element, isDummy=false) {
 		@param callback {function} option, the function to call when the animation is complete
 		@return <code>self</code>
 	 */
-	self.fade$ = function(css, duration, rate=2, callback) {
+	self.fade$ = function(css, callback, duration=400, rate=2) {
 		if (animating) clearInterval(timer);	// stop whatever animation is going on
 		var time = 0;
 		var origCss = new Object();
@@ -244,7 +244,7 @@ var C = function(element, isDummy=false) {
 			if (time >= duration) {
 				clearInterval(timer);
 				animating = false;
-				callback();
+				if (callback !== undefined) callback();
 			}
 		}, rate);
 		return self;
