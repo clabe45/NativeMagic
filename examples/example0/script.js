@@ -1,5 +1,5 @@
 function example () {
-	var body = c(document.body);
+	var body = c(document.body);	// or just c(document.body)
 	body.style$('backgroundColor', 'rgb(0,0,200)');	// initial style
 	var startFading = function() {
 		body.fade$({
